@@ -1,0 +1,41 @@
+
+
+
+SET HTTP_PROXY=http://username:password@192.168.7.181:3128
+установка компостера с нуля:
+cd modules/php/PHP-7.0-x64/
+/
+Проверка в \OSPanel\userdata\config\PHP-7.0-x64_php.ini "extension=php_openssl.dll"
+
+php -r "readfile('https://getcomposer.org/installer');" | php
+
+php composer.phar -V
+
+echo @php "%~dp0composer.phar" %*>composer.bat
+php -r "readfile('https://getcomposer.org/installer');" | php - установка с нуля компостера
+\
+
+
+composer global require "fxp/composer-asset-plugin:~1.1.1"
+
+
+composer global require "fxp/composer-asset-plugin:^1.2.0" надёжный плагин
+composer create-project yiisoft/yii2-app-basic ./ 2.0.11 -устновка фрейморка
+
+composer  require --prefer-dist yiisoft/yii2 
+
+composer  require --prefer-dist mihaildev/yii2-ckeditor
+composer require --prefer-dist mihaildev/yii2-ckeditor "*"
+composer require --prefer-dist mihaildev/yii2-elfinder "*"
+composer require --prefer-dist costa-rico/yii2-images "*"
+ aleks — repo 
+e: - переход на другой диск
+composer require yiimaker/yii2-newsletter  - обновление yiiсофта!!!
+cd domains\localhost\awto -каталог
+composer clearcache - очистка кеша
+yii migrate/up --migrationPath=@vendor/costa-rico/yii2-images/migrations - миграция для загрузки изображении
+https://www.yiiframework.com/download - установка компостера и фрейморка
+
+cd Users\uzer\Downloads\OpenServer\domains\localhost
+cd domains\localhost\bibl
+composer global require "fxp/composer-asset-plugin:^1.2.0"
